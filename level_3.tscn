@@ -1,0 +1,280 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://vertical_projectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://horizontal_projectile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://nextLevel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/ground_texture_M.png" type="Texture" id=5]
+[ext_resource path="res://assets/ground_texture_L.png" type="Texture" id=6]
+[ext_resource path="res://assets/ground_texture_D.png" type="Texture" id=7]
+[ext_resource path="res://assets/ground_texture_Fl.png" type="Texture" id=8]
+[ext_resource path="res://label_coin.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/nextLvl.png" type="Texture" id=10]
+[ext_resource path="res://assets/ground_texture_Plain.png" type="Texture" id=11]
+[ext_resource path="res://assets/ground_texture_U.png" type="Texture" id=12]
+[ext_resource path="res://assets/ground_texture_P.png" type="Texture" id=13]
+[ext_resource path="res://assets/next_l_u.png" type="Texture" id=14]
+[ext_resource path="res://assets/next_l_d.png" type="Texture" id=15]
+[ext_resource path="res://assets/next_l_r.png" type="Texture" id=16]
+[ext_resource path="res://assets/ground_texture_Fl_O.png" type="Texture" id=17]
+[ext_resource path="res://assets/next_l_l.png" type="Texture" id=18]
+[ext_resource path="res://coin.tscn" type="PackedScene" id=19]
+[ext_resource path="res://music.tscn" type="PackedScene" id=20]
+
+[sub_resource type="TileSet" id=1]
+0/name = "ground_texture_D.png 0"
+0/texture = ExtResource( 7 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "ground_texture_Fl.png 1"
+1/texture = ExtResource( 8 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "ground_texture_L.png 2"
+2/texture = ExtResource( 6 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "ground_texture_M.png 3"
+3/texture = ExtResource( 5 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "ground_texture_P.png 4"
+4/texture = ExtResource( 13 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "ground_texture_Plain.png 5"
+5/texture = ExtResource( 11 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "ground_texture_U.png 6"
+6/texture = ExtResource( 12 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "nextLvl.png 7"
+7/texture = ExtResource( 10 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 64, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "next_l_u.png 8"
+8/texture = ExtResource( 14 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 64, 64 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "next_l_r.png 9"
+9/texture = ExtResource( 16 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 64, 64 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "next_l_d.png 10"
+10/texture = ExtResource( 15 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 64, 64 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "next_l_l.png 11"
+11/texture = ExtResource( 18 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 64, 64 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "ground_texture_Fl_O.png 12"
+12/texture = ExtResource( 17 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 64, 64 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+
+[node name="level_3" type="Node2D"]
+
+[node name="music" parent="." instance=ExtResource( 20 )]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, 7, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 3, 0, 6, 3, 0, 7, 3, 0, 8, 3, 0, 9, 3, 0, 10, 3, 0, 11, 3, 0, 12, 3, 0, 13, 3, 0, 14, 3, 0, 15, 7, 0, 65536, 4, 0, 65537, 12, 0, 65538, 5, 0, 65539, 12, 0, 65540, 5, 0, 65541, 3, 0, 65542, 3, 0, 65543, 3, 0, 65544, 3, 0, 65545, 3, 0, 65546, 3, 0, 65547, 3, 0, 65548, 7, 0, 65549, 7, 0, 65550, 3, 0, 65551, 3, 0, 131072, 4, 0, 131073, 5, 0, 131074, 5, 0, 131075, 3, 0, 131076, 5, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 8, 0, 131085, 8, 0, 131086, 0, 0, 131087, 3, 0, 196608, 4, 0, 196609, 5, 0, 196610, 3, 0, 196611, 3, 0, 196612, 5, 0, 196613, 5, 0, 196614, 5, 0, 196615, 5, 0, 196616, 1, 0, 196617, 5, 0, 196618, 5, 0, 196619, 5, 0, 196620, 5, 0, 196621, 5, 0, 196622, 5, 0, 196623, 2, 0, 262144, 4, 0, 262145, 5, 0, 262146, 5, 0, 262147, 12, 0, 262148, 1, 0, 262149, 5, 0, 262150, 3, 0, 262151, 3, 0, 262152, 3, 0, 262153, 3, 0, 262154, 5, 0, 262155, 5, 0, 262156, 5, 0, 262157, 1, 0, 262158, 5, 0, 262159, 2, 0, 327680, 4, 0, 327681, 1, 0, 327682, 5, 0, 327683, 5, 0, 327684, 5, 0, 327685, 5, 0, 327686, 3, 0, 327687, 3, 0, 327688, 3, 0, 327689, 3, 0, 327690, 5, 0, 327691, 5, 0, 327692, 5, 0, 327693, 12, 0, 327694, 1, 0, 327695, 2, 0, 393216, 4, 0, 393217, 5, 0, 393218, 3, 0, 393219, 3, 0, 393220, 5, 0, 393221, 5, 0, 393222, 1, 0, 393223, 5, 0, 393224, 5, 0, 393225, 5, 0, 393226, 5, 0, 393227, 5, 0, 393228, 3, 0, 393229, 3, 0, 393230, 5, 0, 393231, 2, 0, 458752, 4, 0, 458753, 5, 0, 458754, 3, 0, 458755, 3, 0, 458756, 5, 0, 458757, 5, 0, 458758, 1, 0, 458759, 5, 0, 458760, 12, 0, 458761, 5, 0, 458762, 5, 0, 458763, 5, 0, 458764, 3, 0, 458765, 5, 0, 458766, 1, 0, 458767, 2, 0, 524288, 4, 0, 524289, 5, 0, 524290, 5, 0, 524291, 12, 0, 524292, 5, 0, 524293, 6, 0, 524294, 6, 0, 524295, 6, 0, 524296, 6, 0, 524297, 6, 0, 524298, 6, 0, 524299, 5, 0, 524300, 5, 0, 524301, 1, 0, 524302, 5, 0, 524303, 2, 0, 589824, 7, 0, 589825, 6, 0, 589826, 6, 0, 589827, 6, 0, 589828, 6, 0, 589829, 3, 0, 589830, 3, 0, 589831, 3, 0, 589832, 3, 0, 589833, 3, 0, 589834, 3, 0, 589835, 6, 0, 589836, 6, 0, 589837, 6, 0, 589838, 6, 0, 589839, 7, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 32, 128, 32, 32, 320, 32, 320, 152, 768, 152, 768, 64, 896, 64, 896, 152, 984, 152, 984, 608, 704, 608, 704, 552, 320, 552, 320, 608, 32, 608, 32, 128, 0, 128, 0, 640, 1024, 640, 1024, 0, 0, 0, 0, 128 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 7.62939e-06, 8.59998 )
+scale = Vector2( 1, 0.96875 )
+polygon = PoolVector2Array( 128, 189.316, 192, 189.316, 192, 123.252, 256, 123.252, 256, 256, 128, 256 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( 1024, 632 )
+rotation = 3.14418
+scale = Vector2( 1, 0.96875 )
+polygon = PoolVector2Array( 128.475, 189.593, 192, 189.316, 192, 123.252, 256, 123.252, 256.64, 255.316, 128, 256 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 128, 384, 256, 384, 256, 512, 128, 512 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 384, 256, 640, 256, 640, 384, 384, 384 )
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+position = Vector2( -224, -117 )
+
+[node name="Sprite" parent="." instance=ExtResource( 4 )]
+position = Vector2( 832, 104 )
+scale = Vector2( 1.925, 1 )
+
+[node name="horizontal_projectile" parent="." instance=ExtResource( 2 )]
+position = Vector2( -236, -208 )
+
+[node name="horizontal_projectile2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -564, -272 )
+
+[node name="horizontal_projectile3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 363, -272 )
+
+[node name="horizontal_projectile4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 44, -205 )
+
+[node name="vertical_projectile" parent="." instance=ExtResource( 1 )]
+position = Vector2( -144, -408 )
+
+[node name="vertical_projectile2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 40, -408 )
+
+[node name="vertical_projectile3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -144, -178 )
+
+[node name="vertical_projectile4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 24, -178 )
+
+[node name="Node2D" parent="." instance=ExtResource( 19 )]
+position = Vector2( 802, 424 )
+
+[node name="Coin" parent="." instance=ExtResource( 9 )]
+margin_left = 901.0
+margin_top = 3.0
+margin_right = 959.0
+margin_bottom = 54.0
+
+[node name="Node2D2" parent="." instance=ExtResource( 19 )]
+position = Vector2( 11, 507 )
